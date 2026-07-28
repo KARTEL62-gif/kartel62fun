@@ -1,9 +1,19 @@
 <style>
-  /* Reset & Container Utama */
+  /* Reset & Container Utama dengan Background Gambar */
   .landing-card {
     max-width: 450px;
     margin: 0 auto;
-    background-color: #0b0f19;
+    
+    /* MENAMBAHKAN BACKGROUND GAMBAR & OVERLAY GELAP */
+    /* Menambahkan lapisan hitam transparan (0.85) agar teks tetap terbaca jelas */
+    background-image: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.95)), 
+                      url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo_DPIN_bnwtgIopfWy1668GSPMISW8HvxvAcDl2NEBcEIi7MPaq5AkXE1WMbAMNzQACNzgXvbpmOqzhA2XwdI2EaBeQgP9fxL8ufhGoQRzbLniCH1hNlM1_M5FX094J_p_6G_VMkFXRxKHuuH1n0yNQC7w7BCpWq0ZpfNo3qLrgARXnVCzFvCF3ywXq3e/s1024/Gemini_Generated_Image_3awe2b3awe2b3awe%20(1).png");
+    
+    /* Mengatur agar gambar menutupi seluruh area dan rata tengah */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     border-radius: 12px;
     border: 2px solid #1e293b;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8);
@@ -13,7 +23,7 @@
     padding: 15px;
   }
 
-/* Logo Header (Sudah Diperbaiki) */
+  /* Logo Header */
   .header-logo {
     text-align: center;
     padding: 10px 0;
@@ -26,15 +36,16 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
-    display: inline-block; /* Memastikan semua huruf tetap menyatu di tengah */
+    display: inline-block;
   }
 
-  /* Area Banner Gambar */
+  /* Area Banner Gambar Utama */
   .banner-container {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #334155;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Menambah sedikit bayangan agar banner menonjol */
   }
   .banner-container img {
     width: 100%;
@@ -51,6 +62,7 @@
     margin: 15px 0;
     letter-spacing: 1px;
     line-height: 1.4;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Menambah bayangan teks agar lebih jelas di atas background */
   }
 
   /* Grid Informasi Status */
@@ -61,7 +73,9 @@
     margin-bottom: 15px;
   }
   .status-box {
-    background-color: #151d2a;
+    /* Membuat kotak status sedikit transparan agar background terlihat sedikit */
+    background-color: rgba(21, 29, 42, 0.8); 
+    backdrop-filter: blur(4px); /* Efek blur kaca tipis */
     border: 1px solid #1e293b;
     border-radius: 6px;
     padding: 10px;
@@ -102,10 +116,10 @@
   .btn-daftar {
     background: linear-gradient(180deg, #facc15 0%, #eab308 100%);
     color: #000;
-    box-shadow: 0 4px 10px rgba(234, 179, 8, 0.3);
+    box-shadow: 0 4px 10px rgba(234, 179, 8, 0.4);
   }
   .btn-login {
-    background-color: #1e293b;
+    background-color: rgba(30, 41, 59, 0.9); /* Sedikit transparan */
     color: #f8fafc;
     border: 1px solid #475569;
   }
@@ -117,7 +131,7 @@
   /* Tabel Detail */
   .detail-table {
     width: 100%;
-    background-color: #151d2a;
+    background-color: rgba(21, 29, 42, 0.8); /* Sedikit transparan */
     border-radius: 6px;
     border-collapse: collapse;
     overflow: hidden;
@@ -147,9 +161,9 @@
     <h1>KARTEL62</h1>
   </div>
 
-  <!-- Gambar Banner Langsung Menggunakan Link Milikmu -->
+  <!-- Gambar Banner Utama (Tetap Dipertahankan di Dalam) -->
   <div class="banner-container">
-    <img src="https://gemini.google.com/share/6531c01d1a38?skid=6c3964cc-c079-48d2-8778-e3a89918f3c7" alt="Promo KARTEL62 Banner">
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo_DPIN_bnwtgIopfWy1668GSPMISW8HvxvAcDl2NEBcEIi7MPaq5AkXE1WMbAMNzQACNzgXvbpmOqzhA2XwdI2EaBeQgP9fxL8ufhGoQRzbLniCH1hNlM1_M5FX094J_p_6G_VMkFXRxKHuuH1n0yNQC7w7BCpWq0ZpfNo3qLrgARXnVCzFvCF3ywXq3e/s1024/Gemini_Generated_Image_3awe2b3awe2b3awe%20(1).png" alt="Promo KARTEL62 Banner">
   </div>
 
   <!-- Text Informasi -->
