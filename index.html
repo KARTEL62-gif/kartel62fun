@@ -1,15 +1,13 @@
 <style>
-  /* Reset & Container Utama dengan Background Gambar */
+  /* Reset & Container Utama */
   .landing-card {
     max-width: 450px;
     margin: 0 auto;
     
-    /* MENAMBAHKAN BACKGROUND GAMBAR & OVERLAY GELAP */
-    /* Menambahkan lapisan hitam transparan (0.85) agar teks tetap terbaca jelas */
+    /* Memanggil gambar lokal dari repository GitHub */
     background-image: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.95)), 
-                      url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo_DPIN_bnwtgIopfWy1668GSPMISW8HvxvAcDl2NEBcEIi7MPaq5AkXE1WMbAMNzQACNzgXvbpmOqzhA2XwdI2EaBeQgP9fxL8ufhGoQRzbLniCH1hNlM1_M5FX094J_p_6G_VMkFXRxKHuuH1n0yNQC7w7BCpWq0ZpfNo3qLrgARXnVCzFvCF3ywXq3e/s1024/Gemini_Generated_Image_3awe2b3awe2b3awe%20(1).png");
+                      url("banner.png");
     
-    /* Mengatur agar gambar menutupi seluruh area dan rata tengah */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +21,6 @@
     padding: 15px;
   }
 
-  /* Logo Header */
   .header-logo {
     text-align: center;
     padding: 10px 0;
@@ -39,13 +36,12 @@
     display: inline-block;
   }
 
-  /* Area Banner Gambar Utama */
   .banner-container {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
     border: 1px solid #334155;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Menambah sedikit bayangan agar banner menonjol */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
   }
   .banner-container img {
     width: 100%;
@@ -53,7 +49,6 @@
     display: block;
   }
 
-  /* Subtitle Teks */
   .sub-title {
     text-align: center;
     font-size: 13px;
@@ -62,10 +57,9 @@
     margin: 15px 0;
     letter-spacing: 1px;
     line-height: 1.4;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Menambah bayangan teks agar lebih jelas di atas background */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
   }
 
-  /* Grid Informasi Status */
   .status-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -73,9 +67,8 @@
     margin-bottom: 15px;
   }
   .status-box {
-    /* Membuat kotak status sedikit transparan agar background terlihat sedikit */
     background-color: rgba(21, 29, 42, 0.8); 
-    backdrop-filter: blur(4px); /* Efek blur kaca tipis */
+    backdrop-filter: blur(4px);
     border: 1px solid #1e293b;
     border-radius: 6px;
     padding: 10px;
@@ -96,7 +89,6 @@
     color: #fbbf24;
   }
 
-  /* Tombol Aksi */
   .action-buttons {
     display: flex;
     gap: 10px;
@@ -119,7 +111,7 @@
     box-shadow: 0 4px 10px rgba(234, 179, 8, 0.4);
   }
   .btn-login {
-    background-color: rgba(30, 41, 59, 0.9); /* Sedikit transparan */
+    background-color: rgba(30, 41, 59, 0.9);
     color: #f8fafc;
     border: 1px solid #475569;
   }
@@ -128,10 +120,9 @@
     transform: translateY(-2px);
   }
 
-  /* Tabel Detail */
   .detail-table {
     width: 100%;
-    background-color: rgba(21, 29, 42, 0.8); /* Sedikit transparan */
+    background-color: rgba(21, 29, 42, 0.8);
     border-radius: 6px;
     border-collapse: collapse;
     overflow: hidden;
@@ -156,22 +147,19 @@
 </style>
 
 <div class="landing-card">
-  <!-- Header Logo -->
   <div class="header-logo">
     <h1>KARTEL62</h1>
   </div>
 
-  <!-- Gambar Banner Utama (Tetap Dipertahankan di Dalam) -->
+  <!-- Gambar Banner Lokal -->
   <div class="banner-container">
-    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo_DPIN_bnwtgIopfWy1668GSPMISW8HvxvAcDl2NEBcEIi7MPaq5AkXE1WMbAMNzQACNzgXvbpmOqzhA2XwdI2EaBeQgP9fxL8ufhGoQRzbLniCH1hNlM1_M5FX094J_p_6G_VMkFXRxKHuuH1n0yNQC7w7BCpWq0ZpfNo3qLrgARXnVCzFvCF3ywXq3e/s1024/Gemini_Generated_Image_3awe2b3awe2b3awe%20(1).png" alt="Promo KARTEL62 Banner">
+    <img src="banner.png" alt="Promo KARTEL62 Banner">
   </div>
 
-  <!-- Text Informasi -->
   <div class="sub-title">
     KARTEL62 • SLOT GACOR RTP LIVE TINGGI • MUDAH MAXWIN 2026
   </div>
 
-  <!-- Status Grid -->
   <div class="status-grid">
     <div class="status-box">
       <span class="status-label">RATING</span>
@@ -191,13 +179,11 @@
     </div>
   </div>
 
-  <!-- Tombol Link (Daftar & Login) -->
   <div class="action-buttons">
     <a href="https://abc.kartel62.online/" target="_blank" class="btn-action btn-daftar">DAFTAR</a>
     <a href="https://abc.kartel62.online/" target="_blank" class="btn-action btn-login">LOGIN</a>
   </div>
 
-  <!-- Detail Tabel -->
   <table class="detail-table">
     <tr>
       <td class="table-label">NAMA SITUS</td>
